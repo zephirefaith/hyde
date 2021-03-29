@@ -5,7 +5,11 @@ title: Home
 
 <h1>About Me</h1>
 
-<p>I am a *final-year* Ph.D. candidate at UC, San Diego majoring in CSE with an expertise in task planning and plan repair for assembly robots. I am advised by Dr. Henrik I. Christensen and collaborate with Dr. Ashok K. Goel from Georgia Tech.</p>
+<p>I am a final-year CSE Ph.D. candidate at UC, San Diego. My expertise lies in task planning and plan repair for assembly robots. I am advised by Dr. Henrik I. Christensen and collaborate with Dr. Ashok K. Goel from Georgia Tech.</p>
+
+<p>My research interest is in studying the interplay between traditional domain-specific reasoning and situated or physical grounding necessary in robotics. I am studying the research question of how may the physical grounding help in adapting plan-reasoning and how can the structure provided by reasoning be leveraged to selectively focus on salient parts of the physical grounding.</p>
+
+<p>Our previous work has explored the use of behavior trees and meta-reasoning architecture to do this grounding so we may formulate generic methods of catching and repairing faults in a task plan at multiple levels. Our experiments suggest that the structure of a behavior tree provides a natural way of selecting salient sub-parts of the robot and plan state to conduct audit and repair of low-level failures. We also show that by leveraging the causal and physical structure of a task we can learn more efficiently when a task-model is not readily available.  Our current work uses behavior trees to orchestrate complex assembly skills in a meta-reasoning architecture to leverage both reactive and deleberative plan repairs.</p>
 
 <div class="posts">
   {% for post in paginator.posts %}
