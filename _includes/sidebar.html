@@ -22,12 +22,12 @@
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item" href="/resources/parashar_cv_04_2021.pdf">Resume/CV</a>
+      <a class="sidebar-nav-item" href="{{site.baseurl}}resources/parashar_cv_04_2021.pdf">Resume/CV</a>
       <a class="sidebar-nav-item" href="https://scholar.google.com/citations?user=XaD54D8AAAAJ&hl=en">Publications</a>
       <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
     </nav>
