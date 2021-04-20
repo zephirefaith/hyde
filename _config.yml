@@ -12,14 +12,15 @@ permalink:        pretty
 # Setup
 title:            Priyam Parashar
 shorttitle:       'PP'
-tagline:          'Webpage'
-description:      'Personal and Research Webpage'
-baseurl:          /
-avatar:           /me.png
+tagline:          'Homepage'
+# description:      'Personal and Research Webpage'
+baseurl:          'https://acsweb.ucsd.edu/~pparasha/'
+url:              'https://acsweb.ucsd.edu/~pparasha/'
+avatar:           'https://acsweb.ucsd.edu/~pparasha/me.png'
 
 author:
   name:           'Priyam Parashar'
-#  url:            https://twitter.com/mdo
+#  url:            
 
 paginate:         5
 
