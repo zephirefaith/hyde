@@ -2,6 +2,31 @@
 layout: default
 title: Home
 ---
+<h1>About Me</h1>
+<p>
+I am a final-year CSE Ph.D. candidate at UC, San Diego with an expected graduation date of September, 2021. I am interested in robotics and artificial intelligence for (re)planning in semi-structured environments. I am advised by Dr. Henrik I. Christensen and Dr. Ashok K. Goel from Georgia Tech. 
+</p>
+
+<div class="row">
+  <div class="column">
+    <img src="{{site.baseurl}}resources/selfie_with_fetch.jpg" alt="selfie taken by Fetch" width="100%">
+  </div>
+  <div class="column">
+    <img src="{{site.baseurl}}resources/toyota_hsr.jpg" alt="programming HSR at Toyota Mountain View" width="100%">
+  </div>
+</div> 
+
+<p>
+My research interest is in studying the interplay between data, knowledge-based reasoning and situated or physical grounding necessary in robotics. I am studying the research question of how may the physical grounding help in adapting plan-reasoning and how can the structure provided by reasoning be leveraged to selectively focus on salient parts of the physical grounding, i.e. data. 
+</p>
+
+<p>
+Our previous work has explored the use of behavior trees and meta-reasoning architecture to do this grounding so we may formulate generic methods of catching and repairing faults in a task plan at multiple levels. Behavior trees provide an intuitive way of structuring actions and tasks with respect to each other and we are exploring if we can use BTs to ground and repair HTNs more effectively. We have shown that by leveraging the causal and physical structure of a task we can learn more efficiently when a task-model is not readily available. Our current work uses behavior trees to orchestrate complex assembly skills in a meta-reasoning architecture to leverage both reactive and deleberative plan repairs. 
+</p>
+
+<p>
+    My projects can be accessed from the menu on left-side. A time-wise listing of posts can be seen below:
+</p>
 
 <div class="posts">
   {% for post in paginator.posts %}
@@ -35,3 +60,4 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+
