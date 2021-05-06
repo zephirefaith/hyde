@@ -14,9 +14,12 @@ title:            Priyam Parashar
 shorttitle:       'PP'
 tagline:          'Homepage'
 # description:      'Personal and Research Webpage'
-baseurl:          'https://acsweb.ucsd.edu/~pparasha/'
-url:              'https://acsweb.ucsd.edu/~pparasha/'
-avatar:           'https://acsweb.ucsd.edu/~pparasha/me.png'
+# baseurl:          'https://acsweb.ucsd.edu/~pparasha/'
+# url:              'https://acsweb.ucsd.edu/~pparasha/'
+# avatar:           'https://acsweb.ucsd.edu/~pparasha/me.png'
+# baseurl:          '/'
+url:              './'
+avatar:           'me.png'
 
 author:
   name:           'Priyam Parashar'
