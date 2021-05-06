@@ -44,9 +44,9 @@ grid as a descriptor. Our research question was: given a task model and its
 execution under nominal conditions (grounded in observations and symbolic
 descriptors) can the agent learn a variation of that plan in a slightly
 different environment (semi-structurednedd)? We also present our results on a
-simulated manipulator in Gazebo [read more...]({{site.baseurl}}/minecraft-gazebo/)
+simulated manipulator in Gazebo [read more...]({{site.url}}/minecraft-gazebo/)
 
-![Meta-reasoning for Learning New Plans from Failures in Simulation]({{site.baseurl}}/../resources/minecraft_description.png)
+![Meta-reasoning for Learning New Plans from Failures in Simulation]({{site.url}}/../resources/minecraft_description.png)
 
 ### Learning from Driving Demonstrations
 

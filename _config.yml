@@ -18,8 +18,9 @@ tagline:          'Homepage'
 # url:              'https://acsweb.ucsd.edu/~pparasha/'
 # avatar:           'https://acsweb.ucsd.edu/~pparasha/me.png'
 # baseurl:          '/'
-url:              './'
-avatar:           'me.png'
+url:              'http://localhost:4000'
+baseurl:          ''
+avatar:           '/me.png'
 
 author:
   name:           'Priyam Parashar'
