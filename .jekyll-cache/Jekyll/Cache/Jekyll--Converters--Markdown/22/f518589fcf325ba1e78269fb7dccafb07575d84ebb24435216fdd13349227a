@@ -1,0 +1,20 @@
+I"<p>We spent a good amount of last year building a dual-arm system capable of assembling a
+product made of known parts and of known/defined design. This work was funded by RPDC 
+and we developed the system under the name “RPDC Robotics” for the 2021 Assembly
+Challenge at World Robot Summit 2020 (now postponed to Summer 2021). You can check out
+our reports on Arxiv:</p>
+
+<ol>
+  <li>System and Experiences - <a href="https://arxiv.org/abs/2103.15236">https://arxiv.org/abs/2103.15236</a></li>
+  <li>Reasoning and plan execution - <a href="https://arxiv.org/abs/2103.07544">https://arxiv.org/abs/2103.07544</a></li>
+  <li>Vision for manufacturing domain - <a href="https://arxiv.org/abs/2011.00372">https://arxiv.org/abs/2011.00372</a></li>
+</ol>
+
+<p>Videos showing our vision-based manipulation:</p>
+
+<iframe width="420" height="315" src="http://localhost:4000/resources/videos/pulley_servoing.mp4" frameborder="0" allowfullscreen=""></iframe>
+<iframe width="420" height="315" src="http://localhost:4000/resources/videos/shaft_servoing.mp4" frameborder="0" allowfullscreen=""></iframe>
+
+<p>Here’s a cool video showing off a dual-arm assembly task:</p>
+<iframe width="420" height="315" src="http://localhost:4000/resources/videos/8_x_speed_dual_assembly.mp4" frameborder="0" allowfullscreen=""></iframe>
+:ET

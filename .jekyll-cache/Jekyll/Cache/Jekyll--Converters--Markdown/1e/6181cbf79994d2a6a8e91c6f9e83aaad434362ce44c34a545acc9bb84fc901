@@ -1,4 +1,4 @@
-I"h<ul>
+I"�<ul>
   <li><a href="#research-in-progress">Research In-Progress</a>
     <ul>
       <li><a href="#guided-learning-in-assembly-domain-using-prior-knowledge">Guided learning in Assembly Domain using Prior Knowledge</a></li>
@@ -49,9 +49,9 @@ grid as a descriptor. Our research question was: given a task model and its
 execution under nominal conditions (grounded in observations and symbolic
 descriptors) can the agent learn a variation of that plan in a slightly
 different environment (semi-structurednedd)? We also present our results on a
-simulated manipulator in Gazebo <a href="/minecraft-gazebo/">read more…</a></p>
+simulated manipulator in Gazebo <a href="http://localhost:4000/minecraft-gazebo/">read more…</a></p>
 
-<p><img src="/../resources/minecraft_description.png" alt="Meta-reasoning for Learning New Plans from Failures in Simulation" /></p>
+<p><img src="http://localhost:4000/../resources/minecraft_description.png" alt="Meta-reasoning for Learning New Plans from Failures in Simulation" /></p>
 
 <h3 id="learning-from-driving-demonstrations">Learning from Driving Demonstrations</h3>
 
