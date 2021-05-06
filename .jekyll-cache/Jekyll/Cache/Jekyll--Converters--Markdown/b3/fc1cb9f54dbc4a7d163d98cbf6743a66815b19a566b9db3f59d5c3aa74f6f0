@@ -1,0 +1,67 @@
+I"h<ul>
+  <li><a href="#research-in-progress">Research In-Progress</a>
+    <ul>
+      <li><a href="#guided-learning-in-assembly-domain-using-prior-knowledge">Guided learning in Assembly Domain using Prior Knowledge</a></li>
+    </ul>
+  </li>
+  <li><a href="#past-research">Past Research</a>
+    <ul>
+      <li><a href="#guided-learning-in-simulation-minecraft-and-gazebo">Guided learning in Simulation: Minecraft and Gazebo</a></li>
+      <li><a href="#learning-from-driving-demonstrations">Learning from Driving Demonstrations</a></li>
+      <li><a href="#designing-a-taxonomy-for-modes-of-human-robot-interaction">Designing a Taxonomy for Modes of Human-robot Interaction</a></li>
+    </ul>
+  </li>
+  <li><a href="#technical-projects">Technical Projects</a>
+    <ul>
+      <li><a href="#assembly-challenge--world-robot-summit-2020">Assembly Challenge @ World Robot Summit 2020</a></li>
+      <li><a href="#robocup-at-home-2017">RoboCup At Home 2017</a></li>
+      <li><a href="#exploring-human-aware-navigation">Exploring Human-aware Navigation</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="research-in-progress">Research In-Progress</h2>
+
+<h3 id="guided-learning-in-assembly-domain-using-prior-knowledge">Guided learning in Assembly Domain using Prior Knowledge</h3>
+
+<p>Given a prior task model and demonstration of its execution, how may a
+manipulator robot monitors its progress and localize failure in semi-structured
+conditions? Our research is trying to answer this question by applying
+meta-reasoning framework on the assembly domain. Given a discrete space of
+positions and orientations there are countably finite configurations possible
+between two objects however it is not reasonable to learn over this entire space
+in case a failure occurs, specially in semi-structured environments.
+Meta-reasoning asks the question: given my previous experiences which state and
+related sub-task have the highest probability of triggering this failure? By
+answering this question we may guide a robot learner for more efficient learning
+by either restricting the state-space or injecting shaped rewards.</p>
+
+<h2 id="past-research">Past Research</h2>
+
+<h3 id="guided-learning-in-simulation-minecraft-and-gazebo">Guided learning in Simulation: Minecraft and Gazebo</h3>
+
+<p>Our pilot study which builds the base for subsequent research. We wanted to
+study if action-plans for given tasks can be grounded in observational
+descriptions of the world rather than only symbolic descriptions. We used the world
+of Minecraft for our simulated experiment so that actions are deterministic but
+we used a LIDAR-like sensor on the agent to observe the world and use occupancy
+grid as a descriptor. Our research question was: given a task model and its
+execution under nominal conditions (grounded in observations and symbolic
+descriptors) can the agent learn a variation of that plan in a slightly
+different environment (semi-structurednedd)? We also present our results on a
+simulated manipulator in Gazebo <a href="/minecraft-gazebo/">read more…</a></p>
+
+<p><img src="/../resources/minecraft_description.png" alt="Meta-reasoning for Learning New Plans from Failures in Simulation" /></p>
+
+<h3 id="learning-from-driving-demonstrations">Learning from Driving Demonstrations</h3>
+
+<h3 id="designing-a-taxonomy-for-modes-of-human-robot-interaction">Designing a Taxonomy for Modes of Human-robot Interaction</h3>
+
+<h2 id="technical-projects">Technical Projects</h2>
+
+<h3 id="assembly-challenge--world-robot-summit-2020">Assembly Challenge @ World Robot Summit 2020</h3>
+
+<h3 id="robocup-at-home-2017">RoboCup At Home 2017</h3>
+
+<h3 id="exploring-human-aware-navigation">Exploring Human-aware Navigation</h3>
+:ET
