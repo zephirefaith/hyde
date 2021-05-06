@@ -1,5 +1,5 @@
 ---
-layout: sub-page
+layout: default
 title: Coming soon
 ---
 
