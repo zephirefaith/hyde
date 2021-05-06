@@ -29,7 +29,7 @@ related sub-task have the highest probability of triggering this failure? By
 answering this question we may guide a robot learner for more efficient learning
 by either restricting the state-space or injecting shaped rewards.
 
-[comment]: # [more...]({%link {{site.baseurl}}/projects/learning_assembly_prior_knowledge.md})
+[comment]: # [more...]({% link learning_assembly_prior_knowledge.md%})
 
 ## Past Research
 
@@ -44,8 +44,7 @@ grid as a descriptor. Our research question was: given a task model and its
 execution under nominal conditions (grounded in observations and symbolic
 descriptors) can the agent learn a variation of that plan in a slightly
 different environment (semi-structurednedd)? We also present our results on a
-simulated manipulator in Gazebo [read more...]({%link
-{{site.baseurl}}/projects/minecraft_gazebo.md})
+simulated manipulator in Gazebo [read more...]({{site.baseurl}}/minecraft-gazebo/)
 
 ![Meta-reasoning for Learning New Plans from Failures in Simulation]({{site.baseurl}}/../resources/minecraft_description.png)
 
