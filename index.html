@@ -2,50 +2,78 @@
 layout: default
 title: Home
 ---
+
 <h1>About Me</h1>
 <p>
-A final-year CSE Ph.D. candidate at UC, San Diego with an expected graduation date of September, 2021 and open for job opportunities. I am interested in robotics and artificial intelligence applied in semi-structured and dynamic environments. I am advised by Dr. Henrik I. Christensen and Dr. Ashok K. Goel from Georgia Tech. 
+  A final-year CSE Ph.D. candidate at UC, San Diego with an expected graduation date of
+  September, 2021 and open for job opportunities. I am interested in robotics and
+  artificial intelligence applied in semi-structured and dynamic environments. I am
+  advised by Dr. Henrik I. Christensen and Dr. Ashok K. Goel from Georgia Tech.
 </p>
 
 <h2>Research Motivation</h2>
 <p>
-I am motivated by robotics applications which impact and help human counterparts in the real-world. Given this motivation I find model-based reasoning a strong tool to frame planning problems thereby making them interpretable and introspectable. This knowledge can then be used to generate dialogues between a human and a robot to either guide the robot for a novel problem or explain the reason for departing from a plan or why a failure occurred. My research-work has consistently focused on approaches that enable data-based learning and its interpretable explanations on various collaborative robots.
+  I am motivated by robotics applications which impact and help human counterparts in
+  the real-world. Given this motivation I find model-based reasoning a strong tool to
+  frame planning problems thereby making them interpretable and introspectable. This
+  knowledge can then be used to generate dialogues between a human and a robot to either
+  guide the robot for a novel problem or explain the reason for departing from a plan or
+  why a failure occurred. My research-work focuses on approaches that use existing
+  structure to make data-based learning more efficient and enable its interpretable
+  explanation for collaborative robotics.
 </p>
 
 <div class="row">
   <div class="column">
-    <img src="{{site.url}}/resources/selfie_with_fetch.jpg" alt="selfie taken by Fetch" width="100%">
+    <img
+      src="{{site.url}}/resources/selfie_with_fetch.jpg"
+      alt="selfie taken by Fetch"
+      width="100%"
+    />
   </div>
   <div class="column">
-    <img src="{{site.url}}/resources/toyota_hsr.jpg" alt="programming HSR at Toyota Mountain View" width="100%">
+    <img
+      src="{{site.url}}/resources/toyota_hsr.jpg"
+      alt="programming HSR at Toyota Mountain View"
+      width="100%"
+    />
   </div>
-</div> 
-
+</div>
 
 <h2>Ph.D. Thesis</h2>
 <p>
-My research has been looking at how to ground an abstract action like <kbd>Pick('pulley')</kbd> along-with its preconditions and effects into physical variables and observations so that a robot can monitor progress of its own plan. If the robot fails, we use a trace of this plan and its grounding to learn what went wrong and its solution. My thesis is about doing this kind of failure repair at multiple levels of planning, i.e. skill, task and mission specifications. In manufacturing we can use these grounded explanations along with high-level knowledge of domain to create rich set of interactions between a manufacturing robot and its human tutor/peer.
-<br>
-<br>
-Apart from academia, I have also interned for Vecna Robotics and Honda Research Institute - USA. While the earlier years of my Masters and Ph.D. research focused on mobile platforms and navigational problems in dynamic environments, my thesis grounds model-based reasoning for application on manipulators.
+  My research has been looking at how to ground an abstract action like
+  <kbd>Pick('pulley')</kbd> along-with its preconditions and effects into physical
+  variables and observations so that a robot can monitor progress of its own plan. If
+  the robot fails, we use a trace of this plan and its grounding to reason what went
+  wrong and learn its solution. My thesis is about doing this kind of failure repair at
+  multiple levels of planning, i.e. skill, task and mission specifications. In
+  manufacturing we can use these grounded explanations along with high-level knowledge
+  of domain to create rich set of interactions between a manufacturing robot and its
+  human tutor/peer.
+  <br />
+  <br />
+  Apart from academia, I have also interned for Vecna Robotics and Honda Research
+  Institute - USA. While the earlier years of my Masters and Ph.D. research focused on
+  mobile platforms and navigational problems in dynamic environments, my thesis grounds
+  model-based reasoning for application on manipulators.
 </p>
 
 <!-- <p>
 Our previous work has explored the use of behavior trees and meta-reasoning architecture to do this grounding so we may formulate generic methods of catching and repairing faults in a task plan at multiple levels. Behavior trees provide an intuitive way of structuring actions and tasks with respect to each other and we are exploring if we can use BTs to ground and repair HTNs more effectively. We have shown that by leveraging the causal and physical structure of a task we can learn more efficiently when a task-model is not readily available. Our current work uses behavior trees to orchestrate complex assembly skills in a meta-reasoning architecture to leverage both reactive and deleberative plan repairs. 
 </p> -->
-<hr>
+<hr />
 
 <p>
-    My projects can be accessed from the sidebar, or you can checkout the following stream of dated posts:
+  My projects can be accessed from the sidebar, or you can checkout the following stream
+  of dated posts:
 </p>
 
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{site.url}}{{ post.url }}">
-        {{ post.title }}
-      </a>
+      <a href="{{site.url}}{{ post.url }}"> {{ post.title }} </a>
     </h1>
 
     <span class="post-date">{{ post.date | date: "%b %Y" }}</span>
@@ -57,18 +85,18 @@ Our previous work has explored the use of behavior trees and meta-reasoning arch
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.url }}page{{paginator.next_page}}">Older</a>
+  <a class="pagination-item older" href="{{ site.url }}page{{paginator.next_page}}"
+    >Older</a
+  >
   {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.url }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
+  <span class="pagination-item older">Older</span>
+  {% endif %} {% if paginator.previous_page %} {% if paginator.page == 2 %}
+  <a class="pagination-item newer" href="{{ site.url }}">Newer</a>
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+  <a class="pagination-item newer" href="{{ site.url }}page{{paginator.previous_page}}"
+    >Newer</a
+  >
+  {% endif %} {% else %}
+  <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
-

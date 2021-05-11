@@ -1,36 +1,33 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown: kramdown
+highlighter: rouge
 plugins:
   - jekyll-paginate
   - jekyll-gist
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 # relative_permalinks: true
 
 # Setup
-title:            Priyam Parashar
-shorttitle:       'PP'
-tagline:          'Homepage'
+title: Priyam Parashar
+shorttitle: "PP"
+tagline: "Homepage"
 # description:      'Personal and Research Webpage'
 # baseurl:          'https://acsweb.ucsd.edu/~pparasha/'
-# url:              'https://acsweb.ucsd.edu/~pparasha/'
-# avatar:           'https://acsweb.ucsd.edu/~pparasha/me.png'
+url: "https://acsweb.ucsd.edu/~pparasha"
+avatar: "https://acsweb.ucsd.edu/~pparasha/me.png"
 # baseurl:          '/'
-url:              'http://localhost:4000'
-baseurl:          ''
-avatar:           '/me.png'
 
 author:
-  name:           'Priyam Parashar'
-#  url:            
+  name: "Priyam Parashar"
+#  url:
 
-paginate:         5
-paginate_path:    '/blog/'
+paginate: 5
+paginate_path: "/blog/"
 
 # Custom vars
-version:          2.1.0
+version: 2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo: https://github.com/poole/hyde
