@@ -1,0 +1,32 @@
+# Dependencies
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+# Permalinks
+permalink: pretty
+# relative_permalinks: true
+
+# Setup
+title: Priyam Parashar
+shorttitle: "PP"
+tagline: "Homepage"
+# description:      'Personal and Research Webpage'
+url: "http://localhost:4000"
+baseurl: ""
+avatar: "/me.png"
+
+author:
+  name: "Priyam Parashar"
+#  url:
+
+paginate: 5
+paginate_path: "/blog/"
+
+# Custom vars
+version: 2.1.0
+
+github:
+  repo: https://github.com/poole/hyde
