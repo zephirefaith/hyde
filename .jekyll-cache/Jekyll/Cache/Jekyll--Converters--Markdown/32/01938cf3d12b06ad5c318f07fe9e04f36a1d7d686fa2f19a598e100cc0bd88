@@ -1,0 +1,203 @@
+I"P1<p>My research at its core is motivated by the vision of continually evolving support
+robots that become more self-sufficient by learning from their mistakes and human
+supervision. I am very interested in the research questions of “what should a robot
+learn given a mistake?” and “how can the agent explain <em>why</em> did it learn what it
+learnt?”. Naturally, my research endevours have found a home exploring the
+inter-dependence between data and structure in a given robotic task domain. I consider
+myself a system-oriented researcher, and prefer to ground my questions in real-world
+applications and observations. To this end, I have also interned at
+<a href="#learning-driving-strategies-from-trajectory-level-demonstrations">Honda Research Institute-USA</a>
+and <a href="#learning-indoor-traffic-trends-using-longitudinal-data">Vecna Robotics</a> to
+understand how robots are expected to work in the real-world. I have also architected
+and implemented several robot platforms for application-oriented competitions
+(<a href="#assembly-challenge--world-robot-summit-2020">WRC</a>, <a href="#robocup-at-home-2017">RoboCup</a>)
+and exhibitions (<a href="#selfiebot-for-uc-san-diego-fund-raiser">SelfieBot</a>) which have served
+as necessary experience for understanding the structure in robotics domains.</p>
+
+<!-- A collage of project pictures, real robots and simulation -->
+
+<!-- another paragraph linking research together -->
+
+<ul>
+  <li><a href="#research-in-progress">Research In-Progress</a>
+    <ul>
+      <li><a href="#plan-repair-in-assembly-domain-using-prior-knowledge-and-novel-data">Plan Repair in Assembly Domain using Prior Knowledge and Novel Data</a></li>
+    </ul>
+  </li>
+  <li><a href="#past-research">Past Research</a>
+    <ul>
+      <li><a href="#guided-learning-in-simulation-minecraft-and-gazebo">Guided Learning in Simulation: Minecraft and Gazebo</a></li>
+      <li><a href="#learning-driving-strategies-from-trajectory-level-demonstrations">Learning Driving Strategies from Trajectory-level Demonstrations</a></li>
+      <li><a href="#a-taxonomy-for-modes-of-human-robot-interaction">A Taxonomy for Modes of Human-robot Interaction</a></li>
+      <li><a href="#learning-indoor-traffic-trends-using-longitudinal-data">Learning Indoor Traffic Trends using Longitudinal Data</a></li>
+    </ul>
+  </li>
+  <li><a href="#technical-projects">Technical Projects</a>
+    <ul>
+      <li><a href="#assembly-challenge--world-robot-summit-2020">Assembly Challenge @ World Robot Summit 2020</a></li>
+      <li><a href="#robocup-at-home-2017">RoboCup At Home 2017</a></li>
+      <li><a href="#selfiebot-for-uc-san-diego-fund-raiser">SelfieBot for UC San Diego Fund Raiser</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="research-in-progress">Research In-Progress</h2>
+
+<h3 id="plan-repair-in-assembly-domain-using-prior-knowledge-and-novel-data">Plan Repair in Assembly Domain using Prior Knowledge and Novel Data</h3>
+
+<p>Given a prior task model and demonstration of its execution, how may a manipulator robot
+monitors its progress, catch failures in novel conditions and localize reasons for
+failure in semi-structured conditions? Our research is trying to answer this question by
+applying meta-reasoning framework on the assembly domain. Given a discrete space of
+positions and orientations there are countably finite configurations possible between
+two objects however a large portion of this state-space is infeasible and irrelevant to
+the task’s success, specially in semi-structured environments. Rather than learning a
+value-function on this entire space meta-reasoning asks the question: given my previous
+experiences and current progress which state and related sub-task have the highest
+probability of triggering this failure? By answering this question we may guide a robot
+learner for more efficient learning by either restricting the state-space or injecting
+shaped rewards.</p>
+
+<!-- #### Examples of Task Failures -->
+
+<!-- GIFs of task failures -->
+
+<h2 id="past-research">Past Research</h2>
+
+<h3 id="guided-learning-in-simulation-minecraft-and-gazebo">Guided Learning in Simulation: Minecraft and Gazebo</h3>
+
+<p>Our pilot study which builds the base for my subsequent thesis research. We wanted to
+study if action-plans for given tasks can be grounded in observational descriptions of
+the world rather than semantic-only descriptions. We used the world of Minecraft for our
+simulated experiment so that actions are deterministic but we used a LIDAR-like sensor
+on the agent to observe the world and use occupancy grid as a descriptor. Our research
+question was: given a task model and its execution under nominal conditions (grounded in
+observations and symbolic descriptors) can the agent learn a variation of that plan in a
+slightly different environment (semi-structuredness)? We also present our results on a
+simulated manipulator in Gazebo.</p>
+
+<p><img src="https://acsweb.ucsd.edu/~pparasha/resources/minecraft_description.png" width="80%" /></p>
+
+<h3 id="learning-driving-strategies-from-trajectory-level-demonstrations">Learning Driving Strategies from Trajectory-level Demonstrations</h3>
+
+<p>HRI-US was interested in exploring how do drivers usually account for partially or
+completely occluded pedestrians behind parked vehicles in suburban settings. I modelled
+this as a learning from demonstration (keyframes in this instance) problem to (1) train
+a trajectory-level constraint-generator using smooth splines, and (2) to study the
+effect of size of the parked vehicle and proximity of the parked vechicle to road median
+on the characteristics of the possible trajectory-space as compared to usual driving
+behavior. To conduct the data collection, analysis and training I implemented a driving
+simulator on top of Gazebo using its C++ API for this project. We observed that humans
+are much more flexible at following “do not cross the yellow line” rule under certain
+contexts, and were able to learn these trends as constraints using
+keyframe-representation of driving demonstrations. We used the learned trajectories as
+constraints on the possible valid trajectories which would then be consumed by
+trajectory-planner of the vehicle. HRI-US subsequently patented this component as:
+<em>Keyframe-based Autonomous Vehcicle Operation</em>.</p>
+
+<figure>
+  <img src="https://acsweb.ucsd.edu/~pparasha/resources/lfk_hri.png" class="center-img" />
+  <figcaption><em>(top) Depiction of occluded pedestrian situation in simulation, parked
+  vehicles were varied in size as well as distance from road median to analyze effect on
+  driving trends, (bottom) Using a case-based approach a complex situation can be
+  represented as a linear combination of simple cases, the figures depict generalization
+  of approach to novel scenarios</em></figcaption>
+</figure>
+
+<h3 id="a-taxonomy-for-modes-of-human-robot-interaction">A Taxonomy for Modes of Human-robot Interaction</h3>
+
+<p>We wanted to identify the key features which affect the nature of interaction between
+humans and machines in heterogeneous, goal-oriented teams. Based on an exhaustive review
+of past literature we designed a taxonomy for characterizing these interactions and
+connecting the past taxonomies with each other based on an upper ontology
+classification. We identified three main components characterizing the structure of an
+interaction (environment, task, and team), and structure them over two levels:
+contextual factors and factors driven by local dynamics. We also present an analysis of
+how these factors affect decisions about levels of robot automation and level of
+information abstraction in an interaction, and discuss curent gaps in the literature
+that can motivate future research. Following is the visual schema for proposed taxonomy:</p>
+
+<p><img src="https://acsweb.ucsd.edu/~pparasha/resources/taxonomy.png" alt="Taxonomy for HRI" /></p>
+
+<h3 id="learning-indoor-traffic-trends-using-longitudinal-data">Learning Indoor Traffic Trends using Longitudinal Data</h3>
+
+<p>This project was a collaboration between Dr. Simmons’ lab and Vecna Robotics. We wanted
+to study if routine trends in human traffic (think going from class to class, moving to
+cafeteria during lunch hour or after last class) affect the travel time of an indoor
+carrier robot, and if they do can we model and predict these trends based on observable
+features. An indoor environment is represented by a topological map, so for each edge in
+that map we modelled the travel time as a random variable and used longitudinal data
+(&gt;12months) to identify: (a) complex edges which had more than 1 mode of travel-time,
+(b) features most relevant at discriminating between these modes. Using this knowledge
+we trained a random forest based regressor to predict the travel time given time of day,
+day of week, week of year, etc. We observed that our correlated predictor performed
+significantly better than an uncorrelated predictor trained on the same data. This
+prediction can now be used with a path-planner to optimize over time rather than
+distance of map edges.</p>
+
+<div class="row">
+  <div class="column">
+    <img src="https://acsweb.ucsd.edu/~pparasha/resources/modes_of_edges.png" width="100%" />
+    <em>Real data showing multiple modes of traffic and affected travel time for indoor
+    mobile robot</em>
+  </div>
+  <div class="column">
+    <img src="https://acsweb.ucsd.edu/~pparasha/resources/regression_result.png" width="100%" />
+    <em>Result comparing correlated predictor with uncorrelated predictor</em>
+  </div>
+</div>
+
+<h2 id="technical-projects">Technical Projects</h2>
+
+<h3 id="assembly-challenge--world-robot-summit-2020">Assembly Challenge @ World Robot Summit 2020</h3>
+
+<p>One of the more ambitious projects where I led, and managed, a team of 2-3 Masters and
+Ph.D. students to architect, model, and implement a dual-arm, autonomous manufacturing
+system in ~14 months. I was responsible for modeling the planning domain, implementing
+the high-level planner, designing the ROS-based system architecture, liasing with our
+sponsors and day-to-day operations. We implemented an end-to-end system for the task
+outlined in WRC’s rulebook. The WRC task tested a system for: accurate perception,
+accurate manipulation and aligning of parts, and efficient execution of insertion
+assembly with very tight threshold amongst others. Our system cleared the preliminary
+test stage and was chosen as one of the 16 teams to make it to final round.</p>
+
+<figure>
+  <video width="640" height="420" controls="" class="center-img">
+    <source src="https://acsweb.ucsd.edu/~pparasha/resources/videos/8_x_speed_dual_assembly.mp4" type="video/mp4" />
+  </video>
+  <figcaption><em>Video showing dual-arm execution of a complex three-part assembly
+  (click to play)</em></figcaption>
+</figure>
+
+<h3 id="robocup-at-home-2017">RoboCup At Home 2017</h3>
+
+<p>We designed and implemented a speech activated system to assist a human and compete at
+RoboCup @ Home Challenge in Nagoya, 2017. The effort was undertaken by a team of 5 Ph.D.
+students where I was responsible for implementing person detection and following. We
+used <a href="http://wiki.ros.org/smach">ROS smach</a> to model the high-level decision making and
+implemented interfaces to and from planners and perception components. The speech engine
+was implemented using Google voice-to-text and an omni-directional speaker. Our team
+passed the preliminary screening to be awarded a Human-Support Robot by Toyota and
+represent UC San Diego at the competition.
+<a href="https://ucsdnews.ucsd.edu/pressrelease/uc_san_diego_takes_part_in_robocup_competition_for_the_first_time">press release</a></p>
+
+<figure>
+  <video width="640" height="420" controls="" class="center-img">
+    <source src="https://acsweb.ucsd.edu/~pparasha/resources/videos/robocup2017_comp0.mp4" type="video/mp4" />
+  </video>
+  <figcaption><em>Our "audition" video to RoboCup Organizers (click to play and turn up
+  audio)</em></figcaption>
+</figure>
+
+<h3 id="selfiebot-for-uc-san-diego-fund-raiser">SelfieBot for UC San Diego Fund Raiser</h3>
+
+<p>A fun project we did for UC San Diego fun-raiser which also served as the jumping-board
+for the RoboCup @ Home qualification. Using an FSM and Google voice-to-text we created a
+selfie taking robot which would click a picture of itself with the visitors and email it
+to them. Following video shows the project lead Dr. Shengye Wang taking a selfie with
+the robot:</p>
+
+<video width="640" height="420" controls="" class="center-img">
+  <source src="https://acsweb.ucsd.edu/~pparasha/resources/videos/fetch_selfiebot.mp4" type="video/mp4" />
+</video>
+:ET
