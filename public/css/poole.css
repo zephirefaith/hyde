@@ -234,6 +234,35 @@ img {
   border-radius: 5px;
 }
 
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+figure {
+  display: inline-block;
+  /* border: 1px dotted gray; */
+  margin: 20px; /* adjust as needed */
+}
+figure img {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+figure iframe {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+figure figcaption {
+  /* border: 1px dotted blue; */
+  text-align: center;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;
