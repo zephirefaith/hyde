@@ -19,9 +19,26 @@ and implemented several robot platforms for application-oriented competitions
 and exhibitions ([SelfieBot](#selfiebot-for-uc-san-diego-fund-raiser)) which have served
 as necessary experience for understanding the structure in robotics domains.
 
-<!-- A collage of project pictures, real robots and simulation -->
-
-<!-- another paragraph linking research together -->
+<div class="row">
+  <div class="column">
+    <img
+      src="{{site.url}}/resources/videos/dual_arm.gif"
+      width="100%"
+    />
+  </div>
+  <div class="column">
+    <img
+      src="{{site.url}}/resources/videos/driving_sim.gif"
+      width="100%"
+    />
+  </div>
+  <div class="column">
+    <img
+      src="{{site.url}}/resources/videos/segway_nav.gif"
+      width="100%"
+    />
+  </div>
+</div>
 
 - [Research In-Progress](#research-in-progress)
   - [Plan Repair in Assembly Domain using Prior Knowledge and Novel Data](#plan-repair-in-assembly-domain-using-prior-knowledge-and-novel-data)
