@@ -1,4 +1,4 @@
-I"P1<p>My research at its core is motivated by the vision of continually evolving support
+I"w2<p>My research at its core is motivated by the vision of continually evolving support
 robots that become more self-sufficient by learning from their mistakes and human
 supervision. I am very interested in the research questions of “what should a robot
 learn given a mistake?” and “how can the agent explain <em>why</em> did it learn what it
@@ -14,9 +14,17 @@ and implemented several robot platforms for application-oriented competitions
 and exhibitions (<a href="#selfiebot-for-uc-san-diego-fund-raiser">SelfieBot</a>) which have served
 as necessary experience for understanding the structure in robotics domains.</p>
 
-<!-- A collage of project pictures, real robots and simulation -->
-
-<!-- another paragraph linking research together -->
+<div class="row">
+  <div class="column">
+    <img src="https://acsweb.ucsd.edu/~pparasha/resources/videos/dual_arm.gif" width="100%" />
+  </div>
+  <div class="column">
+    <img src="https://acsweb.ucsd.edu/~pparasha/resources/videos/driving_sim.gif" width="100%" />
+  </div>
+  <div class="column">
+    <img src="https://acsweb.ucsd.edu/~pparasha/resources/videos/segway_nav.gif" width="100%" />
+  </div>
+</div>
 
 <ul>
   <li><a href="#research-in-progress">Research In-Progress</a>
@@ -183,7 +191,7 @@ represent UC San Diego at the competition.
 
 <figure>
   <video width="640" height="420" controls="" class="center-img">
-    <source src="https://acsweb.ucsd.edu/~pparasha/resources/videos/robocup2017_comp0.mp4" type="video/mp4" />
+    <source src="https://acsweb.ucsd.edu/~pparasha/resources/videos/robocup2017_compressed.mp4" type="video/mp4" />
   </video>
   <figcaption><em>Our "audition" video to RoboCup Organizers (click to play and turn up
   audio)</em></figcaption>
